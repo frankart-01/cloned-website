@@ -1,0 +1,11 @@
+HTTrack3.49-5 launched on Mon, 13 Jan 2025 16:52:37 at https://apps.knust.edu.gh/staff
+(httrack https://apps.knust.edu.gh/staff -O /home/arthur/cloned_staff )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+
+HTTrack Website Copier/3.49-5 mirror complete in 2 minutes 51 seconds : 169 links scanned, 168 files written (8879305 bytes overall) [7997361 bytes received at 46768 bytes/sec], 1304329 bytes transferred using HTTP compression in 30 files, ratio 28%
+(No errors, 0 warnings, 0 messages)

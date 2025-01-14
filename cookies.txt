@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+apps.knust.edu.gh	TRUE	/staff	FALSE	1999999999	samesite	lax
+apps.knust.edu.gh	TRUE	/staff	FALSE	1999999999	.AspNetCore.Antiforgery.U7tgNdKBf2M	CfDJ8KrkXdTWbttNrRrr9ovVyEtHysQkiozZ8QrMM8Yno-8qaLZvMGv59a3h74p176JcxRk9NyTIPGad-QW583ARFMSyVNlMXt9dV508Cyuu3UY0JYxXV2zdas2CkMYw25OGBiC2JVc9nfGlwX7o-K4AitA
+apps.knust.edu.gh	TRUE	/	FALSE	1999999999	samesite	strict
+
