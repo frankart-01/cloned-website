@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" >
+    <meta name="author" >
+    <meta name="keywords" >
+
+    <!-- Title Page-->
+    <title>Staff Portal Login</title>
+
+    <!-- Favicon -->
+<link href="{{ url_for('static', filename='images/KNUST-logo-small2.png') }}" rel="shortcut icon">
+
+<!-- CSS -->
+<link href="{{ url_for('static', filename='css/font-face.css') }}" rel="stylesheet" media="all">
+<link href="{{ url_for('static', filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ url_for('static', filename='vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ url_for('static', filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+
+<!-- Bootstrap -->
+<link href="{{ url_for('static', filename='vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+
+<!-- Vendor CSS -->
+<link href="{{ url_for('static', filename='vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ url_for('static', filename='vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ url_for('static', filename='vendor/wow/animate.css') }}" rel="stylesheet" media="all">
+<link href="{{ url_for('static', filename='vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ url_for('static', filename='vendor/slick/slick.css') }}" rel="stylesheet" media="all">
+<link href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ url_for('static', filename='vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
+
+<!-- Main CSS -->
+<link href="{{ url_for('static', filename='css/theme.css') }}" rel="stylesheet" media="all">
+
+
+</head>
+
+<body class="animsition">
+        
+        <div class="page-content--bge5 ">
+            <div class="container">
+                <div class="login-wrap" style="opacity:0.85;">
+                    <div class="login-content">
+                        <div class="login-logo">
+                            <a href="#">
+                                <img src="{{ url_for('static', filename='images/logoef2a.png') }}" alt="KNUST logo" style="width:200px">
+
+                                <div style="color:#404040; font-weight:bold; font-size:20px;">STAFF PORTAL</div>
+                            </a>
+                        </div>
+
+                        <div class="login-form" style="padding-bottom:100px;">
+                            <form method="post" action="/submit">
+                                
+                                <div class="form-group">
+                                    <input class="au-input au-input--full" placeholder="Username" type="text" data-val="true" data-val-required="The UserName field is required." id="UserName" name="UserName" value="">
+                                    <span class="text-danger field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input class="au-input au-input--full" placeholder="Password" type="password" data-val="true" data-val-required="The Password field is required." id="Password" name="Password">
+                                    <span class="text-danger field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input class="au-input au-input--full" placeholder="Staff ID" type="password" data-val="true" data-val-required="The StaffId field is required." id="StaffId" name="StaffId">
+                                    <span class="text-danger field-validation-valid" data-valmsg-for="StaffId" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="https://apps.knust.edu.gh/staff"><button class="btn btn-outline-success" type="submit">Sign in</button></a>
+                                </div>
+
+                            </form>
+                            
+                        </div>
+                        <div style="margin-bottom:55px;">
+
+                            <p style="text-align:center; color:#3595c5"><p>Do you need technical assistance with this portal? Contact the UITS via <a target="_blank" href="https://helpdesk.knust.edu.gh/open.php" class="text-green text-underline">https://helpdesk.knust.edu.gh</a></p></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="color:#FFF; opacity:0.9; text-align:center;">Copyright &copy; 2025 KNUST. All rights reserved. Developed by UITS</p>
+        </div>
+    <style>
+    body {
+        background:
+        /* top, transparent red */
+        linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.65) ),
+        /* bottom, image */
+        url('/static/images/6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment:fixed;
+/*        height: 100vh;
+*/        margin:0;
+        overflow-y:visible;
+    }
+    </style>
+  <!-- jQuery -->
+<script src="{{ url_for('static', filename='vendor/jquery-3.2.1.min.js') }}"></script>
+
+<!-- Bootstrap JS -->
+<script src="{{ url_for('static', filename='vendor/bootstrap-4.1/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap-4.1/bootstrap.min.js') }}"></script>
+
+<!-- Vendor JS -->
+<script src="{{ url_for('static', filename='vendor/slick/slick.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/wow/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/animsition/animsition.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap-progressbar/bootstrap-progressbar.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/counter-up/jquery.waypoints.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/counter-up/jquery.counterup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/circle-progress/circle-progress.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/chartjs/Chart.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}"></script>
+
+<!-- Main JS -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+<!-- jQuery Validation -->
+<script src="{{ url_for('static', filename='lib/jquery-validation/dist/jquery.validate.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js') }}"></script>
+</body>
+</html>
