@@ -10,6 +10,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 
 engine = create_engine(DATABASE_URL)
+print(engine)
 
 db = SQLAlchemy(app)
 
